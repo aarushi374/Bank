@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transfer</title>
+<script src="https://kit.fontawesome.com/1a87f1ecb3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="Customers.css">
+<script type="text/javascript" src="JsFile.js"></script>
+</head>
+<style>
+  .ui-widget-header,.ui-state-default, ui-button {
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: #00CC99;
+  color: white;
+  padding:14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:40%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  float:right;
+}
+.cancel
+{
+  background-color: #00CC99;
+  color: white;
+  padding:14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:40%;
+  text-align:center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+
+}
+input[type=submit]:hover {
+  background-color: #00b389;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.cancel:hover {
+  background-color: #00b389;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+div {
+  padding:20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width:50%;
+  margin: auto;
+}
+
+</style>
+<body class="body">
+  <nav>
+      <h1>Citizen Bank</h1>
+  <form id="form1" action="Servlet" method="get">
+<button onclick="myFunction1()" name="transaction" ><i class="fas fa-comments-dollar"></i></button>
+</form>
+<form id="form2" action="Servlet" method="get">
+  <button onclick="myFunction2()" name="customer" ><i class="fas fa-user"></i></button>
+  </form>
+  <button onclick="myFunction3()" ><i class="fas fa-home"></i></button>
+</nav>
+<p class="name">Transfer Money</p>
+<div>
+  <form action="Servlet" method="post">
+    <label for="from">From</label>
+    <input type="text" name="from" id="fname" onclick="show2()"><br>
+    
+    <label for="to">To</label>
+    <select id="to" name="to">
+      <option value="Aarushi Bansal">Aarushi Bansal</option>
+      <option value="Meena Bansal">Meena Bansal</option>
+      <option value="Nitin Bansal">Nitin Bansal</option>
+      <option value="Preeti Agarwal">Preeti Agarwal</option>
+      <option value="Neha Jaiswal">Neha Jaiswal</option>
+      <option value="Pooja Singh">Pooja Singh</option>
+      <option value="Preeti Kaushik">Preeti Kaushik</option>
+      <option value="Rohan Mehta">Rohan Mehta</option>
+      <option value="Akash Singh">Akash Singh</option>
+      <option value="Mudit Gupta">Mudit Gupta</option>
+    </select>
+    <label for="amount">Amount</label>
+  <input type="text" id="amount" name="amount" placeholder="Amount">
+    <input type="submit" value="Submit" name="submit">
+  </form>
+  <button type="button" name="button" class="cancel" onclick="location.href = './HomePage.html';">Cancel</button>
+</div>
+</body>
+</html>
