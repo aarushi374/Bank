@@ -12,6 +12,12 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 body.body
   {
     margin: 0px;
+    background-image: url("bg2.jpg");
+    height: auto; 
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  max-width:100%;
   }
 
 nav {
@@ -39,14 +45,12 @@ margin-bottom: 10px;
 nav button {
   float:right;
   text-align: center; /* Center-align text */
-  width: 12%; /* Equal width (5 icons with 20% width each = 100%) */
+  width: 12%;
   transition: all 0.3s ease; /* Add transition for hover effects */
   font-size: 30px;
   color: white;
   border:none;
   background: none;
-  /*optional*/
-  /*input has OS specific font-family*/
   padding: 12px 0;
 }
 nav button:hover {
@@ -70,7 +74,7 @@ td {
 table.deco td, table.deco th {
 border: 1px solid #ddd;
 padding: 8px;}
-table.deco tr:nth-child(even){background-color: #f2f2f2;}
+table.deco tr{background-color: #f2f2f2;}
       table.deco tr:hover {background-color: #ddd;}
       table.deco th {
         	padding-top: 12px;
